@@ -11,6 +11,7 @@ public class Proyect {
         String outputRoute = "C:\\Users\\david\\OneDrive - Centro de Enseñanza Técnica Industrial\\Documentos\\CodeGym Proyects\\Proyecto uno\\Codificador\\src\\ProyectoUno\\salida.txt";
         String archivoCifrado = "C:\\Users\\david\\OneDrive - Centro de Enseñanza Técnica Industrial\\Documentos\\CodeGym Proyects\\Proyecto uno\\Codificador\\src\\ProyectoUno\\cifrado.txt";
         int key;
+     
 
         while (exit == false) {
             System.out.println("Elije una opción: ");
@@ -27,8 +28,8 @@ public class Proyect {
                     System.out.println("Captura la ruta del archivo a descifrar: ");
                     //inputRoute = console.nextLine();
                     System.out.println("Captura la ruta del archivo de salida:");
-                    //outputRoute = console.nextLine();
-                    System.out.println("Captura la llave: ");
+                    //archivoCifrado = console.nextLine();
+                    System.out.println("Captura la llave numérica: ");
                     key = console.nextInt();
                     System.out.println("Procesando...");
                     Cifrado cifrado = new Cifrado(inputRoute, key, archivoCifrado);
@@ -40,7 +41,7 @@ public class Proyect {
                     //archivoCifrado = console.nextLine();
                     System.out.println("Captura la ruta del archivo de salida: ");
                     //outputRoute = console.nextLine();
-                    System.out.println("Captura la llave: ");
+                    System.out.println("Captura la llave numérica: ");
                     key = console.nextInt();
                     System.out.println("Procesando...");
                     Descifrado descifrado = new Descifrado(archivoCifrado, key, outputRoute);
