@@ -45,9 +45,18 @@ public class Proyect {
                     key = console.nextInt();
                     System.out.println("Procesando...");
                     Descifrado descifrado = new Descifrado(archivoCifrado, key, outputRoute);
-                    descifrado.descifrarConLlave(key);
+                    descifrado.descifrarConLlave(descifrado.getKey());
                     break;
                 case 3:
+                    System.out.println("3 - Descifrar por fuerza bruta");
+                    System.out.println("Captura la ruta del archivo cifrado");
+                    //archivoCifrado = console.nextLine();
+                    System.out.println("Captura la ruta del archivo de salida: ");
+                    //outputRoute = console.nextLine();
+                    System.out.println("Procesando...");
+                    Descifrado descifrado2 = new Descifrado(archivoCifrado, outputRoute);
+                    descifrado2.bruteForceAttack();
+                    break;
 
                 case 4:
                 case 5:

@@ -71,7 +71,7 @@ public class Cifrado {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        System.out.println("Arcivo cifrado con exito");
+        System.out.println("Arcivo cifrado con exito...");
         System.out.println("");
     }
 
